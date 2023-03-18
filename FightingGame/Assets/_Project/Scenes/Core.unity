@@ -675,7 +675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _components:
   - {fileID: 1852032856}
-  _identifier: PoolObjHolder
+  _identifier: PoolObjectContainer
   _useSceneContext: 1
   _context: {fileID: 0}
   _bindType: 0
