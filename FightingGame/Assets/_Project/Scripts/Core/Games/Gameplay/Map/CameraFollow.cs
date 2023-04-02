@@ -14,7 +14,7 @@ namespace Core.Gameplay
         {
             _characterController = characterController;
             _mapBound = bound;
-            _camOthSize = Camera.main.orthographicSize;
+            _camOthSize = GetComponent<Camera>().orthographicSize;
             _camRatio = (Screen.safeArea.width / Screen.safeArea.height) * _camOthSize;
         }
 
