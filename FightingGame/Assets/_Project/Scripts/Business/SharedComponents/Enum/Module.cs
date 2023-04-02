@@ -9,7 +9,9 @@
     public enum ModuleName
     {
         Dummy,
-        DummyUTKit
+        DummyUTKit,
+
+        CharacterSelection
     }
 
     public enum ViewName

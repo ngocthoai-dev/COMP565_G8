@@ -1,5 +1,6 @@
 ﻿using Core.Business;
 using Core.EventSignal;
+using Core.Gameplay;
 using Core.Module;
 using Core.View;
 using System.Diagnostics;
@@ -61,6 +62,11 @@ namespace Core
                 .ByInstaller<Dummy.Installer>();
 
             Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.CharacterSelection).To<ICharacterSelection>()
+                .FromSubContainerResolve()
+                .ByInstaller<CharacterSelection.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
                 .WithId(ModuleName.DummyUTKit).To<IDummyUTKit>()
                 .FromSubContainerResolve()
                 .ByInstaller<DummyUTKit.Installer>();
@@ -120,6 +126,8 @@ namespace Core
             Container.Bind<IPoolManager>().WithId(PoolName.Object).To<PoolManager>().AsSingle();
             Container.Bind<AudioPoolManager>().AsSingle();
             Container.Bind<PlayerPrefManager>().AsSingle();
+            Container.Bind<GamePresenter>().AsSingle();
+            Container.Bind<SoundDataLoader>().AsSingle();
             Container.BindInterfacesTo<DefinitionManager>().AsSingle();
 
 #if UNITY_EDITOR
