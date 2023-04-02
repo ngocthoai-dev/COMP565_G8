@@ -9,7 +9,6 @@
     public enum ModuleName
     {
         Dummy,
-        MainMenu,
         DummyUTKit
     }
 
