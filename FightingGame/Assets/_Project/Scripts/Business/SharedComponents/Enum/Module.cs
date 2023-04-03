@@ -9,8 +9,9 @@
     public enum ModuleName
     {
         Dummy,
-        MainMenu,
-        DummyUTKit
+        DummyUTKit,
+
+        CharacterSelection
     }
 
     public enum ViewName
