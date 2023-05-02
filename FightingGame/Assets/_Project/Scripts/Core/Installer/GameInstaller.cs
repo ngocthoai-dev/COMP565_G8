@@ -1,4 +1,4 @@
-﻿using Core.Business;
+using Core.Business;
 using Core.EventSignal;
 using Core.Gameplay;
 using Core.Module;
@@ -62,14 +62,59 @@ namespace Core
                 .ByInstaller<Dummy.Installer>();
 
             Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.DummyUTKit).To<IDummyUTKit>()
+                .FromSubContainerResolve()
+                .ByInstaller<DummyUTKit.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.MainMenu).To<IMainMenu>()
+                .FromSubContainerResolve()
+                .ByInstaller<MainMenu.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.ModeMenu).To<IModeMenu>()
+                .FromSubContainerResolve()
+                .ByInstaller<ModeMenu.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.CharacterToggleMenu).To<ICharacterToggleMenu>()
+                .FromSubContainerResolve()
+                .ByInstaller<CharacterToggleMenu.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.OptionsMenu).To<IOptionsMenu>()
+                .FromSubContainerResolve()
+                .ByInstaller<OptionsMenu.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.SettingsMenu).To<ISettingsMenu>()
+                .FromSubContainerResolve()
+                .ByInstaller<SettingsMenu.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
                 .WithId(ModuleName.CharacterSelection).To<ICharacterSelection>()
                 .FromSubContainerResolve()
                 .ByInstaller<CharacterSelection.Installer>();
 
             Container.BindFactory<IBaseModule, BaseModule.Factory>()
-                .WithId(ModuleName.DummyUTKit).To<IDummyUTKit>()
+                .WithId(ModuleName.AboutMenu).To<IAboutMenu>()
                 .FromSubContainerResolve()
-                .ByInstaller<DummyUTKit.Installer>();
+                .ByInstaller<AboutMenu.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.ControlsMenu).To<IControlsMenu>()
+                .FromSubContainerResolve()
+                .ByInstaller<ControlsMenu.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.BattleHUD).To<IBattleHUD>()
+                .FromSubContainerResolve()
+                .ByInstaller<BattleHUD.Installer>();
+
+            Container.BindFactory<IBaseModule, BaseModule.Factory>()
+                .WithId(ModuleName.BattleResult).To<IBattleResult>()
+                .FromSubContainerResolve()
+                .ByInstaller<BattleResult.Installer>();
         }
 
         private void InstallServices()
@@ -108,6 +153,8 @@ namespace Core
 
             Container.DeclareSignal<GameAudioSignal>().OptionalSubscriber();
             Container.DeclareSignal<PlayOneShotAudioSignal>().OptionalSubscriber();
+            Container.DeclareSignal<OnSyncBattleHUD>().OptionalSubscriber();
+            Container.DeclareSignal<OnEndBattle>().OptionalSubscriber();
 
             Container.DeclareSignal<OnApplicationQuitSignal>().OptionalSubscriber();
         }

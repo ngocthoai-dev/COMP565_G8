@@ -101,6 +101,42 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -680,7 +716,7 @@ TextureImporter:
         width: 75
         height: 42
       alignment: 9
-      pivot: {x: 0.8568754, y: 0.051013764}
+      pivot: {x: 0.53763735, y: 0.0014415922}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -696,12 +732,12 @@ TextureImporter:
       name: DS DSi - Naruto Shippuden Naruto vs Sasuke - Naruto 3 Tailed__32
       rect:
         serializedVersion: 2
-        x: 167
-        y: 2404
+        x: 166
+        y: 2403
         width: 69
         height: 45
       alignment: 9
-      pivot: {x: 0.870276, y: -0.00016276042}
+      pivot: {x: 0.55345154, y: 0.046099175}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -722,7 +758,7 @@ TextureImporter:
         width: 70
         height: 45
       alignment: 9
-      pivot: {x: 0.7346344, y: 0.013351779}
+      pivot: {x: 0.6900199, y: 0.013351779}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -764,7 +800,7 @@ TextureImporter:
         width: 74
         height: 47
       alignment: 9
-      pivot: {x: 0.8699188, y: 0.02112076}
+      pivot: {x: 0.54636693, y: 0.04327003}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -1,3 +1,5 @@
+using Core.Business;
+using Core.EventSignal;
 using Core.Extension;
 using Core.GGPO;
 using Core.SO;
@@ -46,7 +48,6 @@ namespace Core.Gameplay
         [SerializeField][DebugOnly] private CharacterRenderer _characterRenderer;
         [SerializeField][DebugOnly] private CharacterAnchor _characterAnchor = new();
 
-        [SerializeField] private int _maxHealth = 100;
         [SerializeField] private int _maxLightAtkCombo = 3;
 
         [Header("Jump Config")]
@@ -87,7 +88,8 @@ namespace Core.Gameplay
         [SerializeField][DebugOnly] private CharacterConfigSO _characterConfigSO;
 
         public CharacterConfigSO CharacterConfigSO => _characterConfigSO;
-        [SerializeField][DebugOnly] private ItemStats _characterStats = new();
+        public ItemStats CharacterStats => _characterStats;
+        [SerializeField][DebugOnly] protected ItemStats _characterStats = new();
 
         public float GetStatsValue(StatType type) => _characterStats.GetStats(type).Value;
 
@@ -125,6 +127,7 @@ namespace Core.Gameplay
             _characterConfigSO = characterConfigSO;
             _characterRenderer.SetColor(_characterConfigSO.Color);
             _characterStats = _characterConfigSO.CharacterStats.Duplicate();
+            gameObject.GetComponent<AICharacter>().enabled = playerIdx != 0;
             CheckFlip(left, right);
         }
 
@@ -381,6 +384,8 @@ namespace Core.Gameplay
             enabled = false;
             GetComponentInChildren<CollisionBlocker>().SetActive(false);
             // Signal on end
+            _signalBus.Fire(new OnEndBattle(PlayerIndex != 0));
+            GameManager.Instance.Shutdown();
         }
 
         private void Knock()
@@ -394,9 +399,9 @@ namespace Core.Gameplay
             if (isKnock == KnockType.Not) return dmg;
             if (isKnock == KnockType.Absolute || UnityEngine.Random.Range(0, 100) > 50)
             {
-                Knock();
                 if (_characterState == ECharacterState.PARRY)
                     ExitParry();
+                Knock();
             }
             else if (_characterState == ECharacterState.PARRY)
                 dmg /= 8f;

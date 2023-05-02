@@ -14,7 +14,7 @@ namespace Core.Gameplay
         {
             _characterController = characterController;
             _mapBound = bound;
-            _camOthSize = GetComponent<Camera>().orthographicSize;
+            _camOthSize = Camera.main.orthographicSize;
             _camRatio = (Screen.safeArea.width / Screen.safeArea.height) * _camOthSize;
         }
 
@@ -22,9 +22,9 @@ namespace Core.Gameplay
         {
             if (_characterController == null) return;
             _camX = Mathf.Clamp(_characterController.transform.position.x,
-                _mapBound.min.x + _camRatio, _mapBound.max.x - _camRatio);
+                _mapBound.min.x + _camRatio + _mapBound.center.x / 2, _mapBound.max.x - _camRatio - _mapBound.center.x / 2);
             _camY = Mathf.Clamp(_characterController.transform.position.y,
-                _mapBound.min.y + _camOthSize, _mapBound.max.y - _camOthSize);
+                _mapBound.min.y + _camOthSize + _mapBound.center.y/ 2, _mapBound.max.y - _camOthSize - _mapBound.center.y / 2);
             transform.position = Vector3.Lerp(transform.position, new Vector3(_camX, _camY, transform.position.z), _smoothSpd);
         }
     }

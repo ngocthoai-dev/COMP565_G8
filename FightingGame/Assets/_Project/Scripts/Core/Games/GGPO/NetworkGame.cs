@@ -1,15 +1,19 @@
-﻿using Core.Gameplay;
+﻿using Core.Business;
+using Core.EventSignal;
+using Core.Gameplay;
 using Core.SO;
 using Network.UnityGGPO;
 using System;
 using System.IO;
+using System.Linq;
 using Unity.Collections;
 using UnityEngine;
+using Zenject;
 
 namespace Core.GGPO
 {
     [Serializable]
-    public struct NetworkGame : IGame
+    public class NetworkGame : IGame, IDisposable
     {
         public int Framenumber { get; private set; }
         public static int Timer { get; set; }
@@ -21,8 +25,13 @@ namespace Core.GGPO
         public NetworkCharacter[] Characters { get; private set; }
         public MapConfig MapConfig { get; private set; }
 
-        public NetworkGame(MapConfig mapConfig, CharacterConfigSO[] characterConfigSOs)
+        public NetworkCharacter AICharacter => Characters.Last();
+
+        public SignalBus _signalBus { get; private set; }
+
+        public NetworkGame(SignalBus signalBus, MapConfig mapConfig, CharacterConfigSO[] characterConfigSOs)
         {
+            _signalBus = signalBus;
             Framenumber = 0;
             Timer = 99;
             MapConfig = mapConfig;
@@ -31,6 +40,7 @@ namespace Core.GGPO
             {
                 Characters[i] = new NetworkCharacter();
             }
+            _signalBus.Subscribe<OnEndBattle>(OnEndBattle);
         }
 
         public void Update(long[] inputs, int disconnect_flags)
@@ -40,6 +50,8 @@ namespace Core.GGPO
                 if (Framenumber == 0)
                 {
                     Start = true;
+                    Run = true;
+                    _signalBus.Fire(new OnSyncBattleHUD(Characters));
                 }
                 Framenumber++;
                 if (Framenumber <= 0) return;
@@ -60,21 +72,33 @@ namespace Core.GGPO
                     if ((disconnect_flags & (1 << idx)) != 0)
                     {
                         //Handle AI
+                        Debug.Log("Handle AI");
+                        //NetworkInput.ParseInputs(inputs[idx],
+                        //                      out up,
+                        //                      out down,
+                        //                      out left,
+                        //                      out right,
+                        //                      out light,
+                        //                      out heavy,
+                        //                      out skill1,
+                        //                      out skill2,
+                        //                      out dashForward,
+                        //                      out dashBackward);
                     }
                     else
                     {
-                        NetworkInput.ParseInputs(inputs[idx],
-                                              out up,
-                                              out down,
-                                              out left,
-                                              out right,
-                                              out light,
-                                              out heavy,
-                                              out skill1,
-                                              out skill2,
-                                              out dashForward,
-                                              out dashBackward);
                     }
+                    NetworkInput.ParseInputs(inputs[idx],
+                                          out up,
+                                          out down,
+                                          out left,
+                                          out right,
+                                          out light,
+                                          out heavy,
+                                          out skill1,
+                                          out skill2,
+                                          out dashForward,
+                                          out dashBackward);
                     Characters[idx].CharacterController.Logic(idx, up, down, left, right, light, heavy, skill1, skill2, dashForward, dashBackward);
                 }
 
@@ -84,6 +108,8 @@ namespace Core.GGPO
                     Timer--;
                     // End battle
                 }
+
+                _signalBus.Fire(new OnSyncBattleHUD(Characters));
             }
         }
 
@@ -183,6 +209,18 @@ namespace Core.GGPO
                 hashCode = hashCode * -1521134295 + @char.GetHashCode();
             }
             return hashCode;
+        }
+
+        private void OnEndBattle(OnEndBattle signal)
+        {
+            for (int idx = 0; idx < Characters.Count(); idx++)
+                GameManager.Destroy(Characters[idx].CharacterController.gameObject);
+            MapConfig.gameObject.SetActive(false);
+        }
+
+        public void Dispose()
+        {
+            _signalBus.Unsubscribe<OnEndBattle>(OnEndBattle);
         }
     }
 }

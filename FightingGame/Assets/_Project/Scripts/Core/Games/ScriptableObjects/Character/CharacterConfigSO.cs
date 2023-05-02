@@ -43,15 +43,15 @@ namespace Core.SO
         public LevelStatsConfigSO LevelStatsConfigSO = null;
         public bool CanDoubleJump = true;
 
-        public CharacterConfigSO Clone()
-        {
-            return (CharacterConfigSO)MemberwiseClone();
-        }
-
         public CharacterConfigSO ApplyStats()
         {
             CharacterStats.ApplyStats(StatLevels, LevelStatsConfigSO.LevelConfigs);
             return this;
+        }
+
+        public CharacterConfigSO Clone()
+        {
+            return (CharacterConfigSO)MemberwiseClone();
         }
     }
 }

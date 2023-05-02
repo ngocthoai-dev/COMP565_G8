@@ -101,6 +101,42 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -617,7 +653,7 @@ TextureImporter:
         width: 30
         height: 44
       alignment: 9
-      pivot: {x: 0.1949475, y: 0.046877775}
+      pivot: {x: 0.44859263, y: 0.032467928}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -827,7 +863,7 @@ TextureImporter:
         width: 29
         height: 42
       alignment: 9
-      pivot: {x: 0.19569871, y: 0.04086449}
+      pivot: {x: 0.43622512, y: 0.025768463}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -995,7 +1031,7 @@ TextureImporter:
         width: 33
         height: 43
       alignment: 9
-      pivot: {x: 0.20287092, y: 0.05154206}
+      pivot: {x: 0.39502648, y: 0.022046465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1116,7 +1152,7 @@ TextureImporter:
       name: DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__48
       rect:
         serializedVersion: 2
-        x: 152
+        x: 151
         y: 1369
         width: 44
         height: 30
@@ -1268,7 +1304,7 @@ TextureImporter:
         width: 47
         height: 21
       alignment: 9
-      pivot: {x: 0.5069538, y: 0.14203171}
+      pivot: {x: 0.79995924, y: 0.20448521}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1373,7 +1409,7 @@ TextureImporter:
         width: 48
         height: 21
       alignment: 9
-      pivot: {x: 0.52723694, y: 0.12646484}
+      pivot: {x: 0.8551235, y: 0.12647066}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2066,7 +2102,7 @@ TextureImporter:
         width: 37
         height: 34
       alignment: 9
-      pivot: {x: 0.7915073, y: 0.01934994}
+      pivot: {x: 0.592354, y: -0.016770307}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2108,7 +2144,7 @@ TextureImporter:
         width: 35
         height: 35
       alignment: 9
-      pivot: {x: 0.6120599, y: 0.07977469}
+      pivot: {x: 0.54188234, y: 0.009596471}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2129,7 +2165,7 @@ TextureImporter:
         width: 37
         height: 37
       alignment: 9
-      pivot: {x: 0.8533424, y: 0.031820763}
+      pivot: {x: 0.55461246, y: 0.031820763}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2171,7 +2207,7 @@ TextureImporter:
         width: 34
         height: 36
       alignment: 9
-      pivot: {x: 0.17315808, y: 0.0551317}
+      pivot: {x: 0.46212545, y: 0.038075764}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2192,7 +2228,7 @@ TextureImporter:
         width: 22
         height: 41
       alignment: 9
-      pivot: {x: 0.23258556, y: 0.021694276}
+      pivot: {x: 0.45293635, y: 0.02168981}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2213,7 +2249,7 @@ TextureImporter:
         width: 26
         height: 42
       alignment: 9
-      pivot: {x: 0.22344135, y: 0.033082508}
+      pivot: {x: 0.46014875, y: -0.008784703}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2234,7 +2270,7 @@ TextureImporter:
         width: 27
         height: 42
       alignment: 9
-      pivot: {x: 0.2457897, y: 0.00973656}
+      pivot: {x: 0.5062928, y: 0.00973656}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2255,7 +2291,7 @@ TextureImporter:
         width: 23
         height: 42
       alignment: 9
-      pivot: {x: 0.2157898, y: 0.017518543}
+      pivot: {x: 0.4451453, y: 0.017518543}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2276,7 +2312,7 @@ TextureImporter:
         width: 22
         height: 42
       alignment: 9
-      pivot: {x: 0.23258418, y: 0.025300525}
+      pivot: {x: 0.4324008, y: 0.004365467}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2297,7 +2333,7 @@ TextureImporter:
         width: 27
         height: 42
       alignment: 9
-      pivot: {x: 0.2457897, y: 0.00973656}
+      pivot: {x: 0.51434326, y: 0.031316847}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2318,7 +2354,7 @@ TextureImporter:
         width: 23
         height: 42
       alignment: 9
-      pivot: {x: 0.24420962, y: 0.017518543}
+      pivot: {x: 0.44124702, y: 0.06067912}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2339,7 +2375,7 @@ TextureImporter:
         width: 23
         height: 42
       alignment: 9
-      pivot: {x: 0.27263343, y: 0.017518543}
+      pivot: {x: 0.48340905, y: 0.029058548}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2360,7 +2396,7 @@ TextureImporter:
         width: 22
         height: 42
       alignment: 9
-      pivot: {x: 0.23258556, y: 0.017518543}
+      pivot: {x: 0.4749756, y: 0.017514184}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2376,12 +2412,12 @@ TextureImporter:
       name: DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__109
       rect:
         serializedVersion: 2
-        x: 34
+        x: 33
         y: 756
         width: 39
         height: 53
       alignment: 9
-      pivot: {x: 0.29886648, y: 0.01898654}
+      pivot: {x: 0.49542627, y: 0.01898654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2402,7 +2438,7 @@ TextureImporter:
         width: 51
         height: 58
       alignment: 9
-      pivot: {x: 0.37823516, y: 0.00973616}
+      pivot: {x: 0.4810791, y: 0.016692063}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2423,7 +2459,7 @@ TextureImporter:
         width: 47
         height: 56
       alignment: 9
-      pivot: {x: 0.37482664, y: 0.015572684}
+      pivot: {x: 0.48642293, y: 0.022777012}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3619,8 +3655,8 @@ TextureImporter:
         y: 260
         width: 46
         height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47625202, y: 0.027686866}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3829,8 +3865,8 @@ TextureImporter:
         y: 204
         width: 46
         height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.49999735, y: 0.06972804}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4101,8 +4137,8 @@ TextureImporter:
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__123: 442200976
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__133: -1450096697
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__57: 303287111
-      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__80: -340960966
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__183: 1765547285
+      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__80: -340960966
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__68: 780775197
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__106: 151167966
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__114: 1050319316
@@ -4134,7 +4170,6 @@ TextureImporter:
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__124: -524890533
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__21: 4938184
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__43: 1236364630
-      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__83: 648109423
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__93: -1962363719
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__64: -966866644
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__102: -141837850
@@ -4143,11 +4178,12 @@ TextureImporter:
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__53: 411132856
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__46: -748777965
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__74: -266128964
-      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__169: -1148254516
+      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__83: 648109423
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__62: -1844424079
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__172: -2018566351
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__36: -2067862613
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__13: -320718689
+      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__169: -1148254516
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__182: -806877786
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__91: -1330750055
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__85: 440974793
@@ -4162,10 +4198,10 @@ TextureImporter:
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__170: -687720247
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__58: 1327923326
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__11: -429224745
-      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__22: 2141843148
-      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__126: 236370470
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__115: 79972647
+      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__22: 2141843148
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__189: -1033840446
+      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__126: 236370470
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__150: 1441552658
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__146: 315537777
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__191: -1436470215
@@ -4206,8 +4242,8 @@ TextureImporter:
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__125: -19256192
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__184: 1047152854
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__3: 191888750
-      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__17: -1454957314
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__38: 1181585146
+      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__17: -1454957314
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__103: -1645258595
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__2: -1426761765
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__171: 562230773
@@ -4220,8 +4256,8 @@ TextureImporter:
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__20: -1460704516
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__113: 1837222492
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__27: -108843237
-      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__118: 193515965
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__132: -976246484
+      DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__118: 193515965
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__1: 473235941
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__190: -917481394
       DS DSi - Naruto Shippuden Naruto vs Sasuke - Neji Hyuga__14: -684076612

@@ -1,4 +1,4 @@
-﻿using Core.Business;
+using Core.Business;
 using Core.EventSignal;
 
 using Cysharp.Threading.Tasks;
@@ -47,8 +47,8 @@ namespace Core
             //await _gameStore.CreateModule<IDummyUTKit, DummyUTKitModel>(
             //    _gameSetting.DummyUTKitId, ViewName.Unity, ModuleName.DummyUTKit);
 
-            await _gameStore.CreateModule<ICharacterSelection, CharacterSelectionModel>(
-                "", ViewName.Unity, ModuleName.CharacterSelection);
+            await _gameStore.CreateModule<IMainMenu, MainMenuModel>(
+                _gameSetting.MainMenuId, ViewName.Unity, ModuleName.MainMenu);
         }
 
         public void Out()

@@ -56,7 +56,7 @@ namespace Core.GGPO
                     _charViews[idx].GetComponent<CharacterController2D>()
                         .Setup(idx, gameManager.CharConfigs[idx], left, !left);
                 }
-                transform.Find("Camera").GetComponent<CameraFollow>().Setup(networkGame.Characters[0].CharacterController, gameManager.MapConfig.Bound);
+                Camera.main.GetComponent<CameraFollow>().Setup(networkGame.Characters[0].CharacterController, gameManager.MapConfig.Bound);
                 NetworkGame.Start = false;
             }
             for (int i = 0; i < characterNetworks.Length; ++i)

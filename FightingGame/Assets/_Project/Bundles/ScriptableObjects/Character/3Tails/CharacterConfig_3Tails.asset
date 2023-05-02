@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4866e17b5928183468c2cb115e890cc7, type: 3}
+  m_Name: CharacterConfig_3Tails
+  m_EditorClassIdentifier: Framework:Core.SO:CharacterConfigSO
+  Index: 1
+  CharacterName: 3 Tails
+  Prefab: {fileID: 2788916764280250751, guid: ed69037fbaf564e169505706b9ab4559, type: 3}
+  Controller: {fileID: 22100000, guid: 77a7108d60fb44c16b2d026b13986790, type: 2}
+  Thumbnail: {fileID: -2019862616, guid: 4d6b73343753c154c8bd34e8494d6f59, type: 3}
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  Light1: {fileID: 11400000, guid: 6a1ab1d7b7ea10042b10b9a0f96b52c4, type: 2}
+  Light2: {fileID: 11400000, guid: 5ab0588c5ecdb4fffac19581b3181f14, type: 2}
+  Light3: {fileID: 11400000, guid: 626c1534cc4444fa6a77af87420ec80e, type: 2}
+  Heavy: {fileID: 11400000, guid: abb5099baba3bba4482588fd324e757d, type: 2}
+  Skill1: {fileID: 11400000, guid: 6d07a75af531a9840ae359413bd5e647, type: 2}
+  Skill2: {fileID: 11400000, guid: 7ec59777591b4354d811c28430df3086, type: 2}
+  StatLevels:
+    list:
+    - Key: 0
+      Value: 3
+    - Key: 1
+      Value: 2
+    - Key: 2
+      Value: 4
+    - Key: 3
+      Value: 2
+    - Key: 4
+      Value: 3
+    - Key: 5
+      Value: 2
+    - Key: 6
+      Value: 2
+    - Key: 7
+      Value: 4
+  CharacterStats:
+    Stats:
+      list:
+      - Key: 0
+        Value:
+          BaseValue: 180
+      - Key: 1
+        Value:
+          BaseValue: 100
+      - Key: 2
+        Value:
+          BaseValue: 0.1
+      - Key: 3
+        Value:
+          BaseValue: 12
+      - Key: 4
+        Value:
+          BaseValue: 3.4
+      - Key: 5
+        Value:
+          BaseValue: 6.2
+      - Key: 6
+        Value:
+          BaseValue: 1.1
+      - Key: 7
+        Value:
+          BaseValue: 18
+  LevelStatsConfigSO: {fileID: 11400000, guid: e3f73f4b8aff6ad4e8503891e6dc3c24, type: 2}
+  CanDoubleJump: 1
