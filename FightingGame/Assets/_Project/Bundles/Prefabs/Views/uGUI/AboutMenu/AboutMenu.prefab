@@ -420,7 +420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Authors: Arturo Alvarado, Sai Teja Kambala, Andrew Miner, and Tom Pham'
+  m_text: 'Authors: Tom Pham, Joseph Wang, Mehrdad Rakhshieh'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 586bdd1ac2e0fa142aa8ad5d2c553c27, type: 2}
   m_sharedMaterial: {fileID: 1341198873184373614, guid: 586bdd1ac2e0fa142aa8ad5d2c553c27, type: 2}
@@ -596,12 +596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This 2D multiplayer fighting game was a project created for our Advanced
-    Software Engineering class. Drawing inspiration from popular franchises such
-    as Super Smash Bros. and Street Fighter, players can fight against their friends
-    in local multiplayer or against NPCs that offer an engaging challenge. This game
-    features a selection of fighters and maps to choose from, providing endless possibilities
-    for players to explore and battle in.
+  m_text: This 2D multiplayer fighting game about section
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 586bdd1ac2e0fa142aa8ad5d2c553c27, type: 2}
   m_sharedMaterial: {fileID: 1341198873184373614, guid: 586bdd1ac2e0fa142aa8ad5d2c553c27, type: 2}
